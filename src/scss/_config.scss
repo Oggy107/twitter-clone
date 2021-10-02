@@ -1,0 +1,49 @@
+// App color palette
+
+$color-primary: #1DA1F2;
+$color-secondary-b: #14171A;
+$color-secondary-dg: #657786;
+$color-secondary-lg: #AAB8C2;
+$color-secondary-elg: #E1E8ED;
+$color-secondary-eelg: #F5F8FA;
+$color-secondary-w: #FFFFFF;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@function set-text-color($bgcolor) {
+    @if (lightness($bgcolor) >= 55%)
+    {
+        @return $color-secondary-b;
+    }
+    @else
+    {
+        @return $color-secondary-w;
+    }
+}
+
+@function hover-color-change($bgcolor) {
+    @if (lightness($bgcolor) >= 50%)
+    {
+        @return darken($bgcolor, 10%);
+    }
+    @else
+    {
+        @return lighten($bgcolor, 10%);
+    }
+}
+
+// common resets
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

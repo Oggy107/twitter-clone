@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sidebar {
+  width: 25vw;
+  height: 100vw;
+  border-right: 1px solid #E1E8ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.sidebar .twitter-icon {
+  padding: .75rem;
+  color: #1DA1F2;
+  border-radius: 2rem;
+}
+
+.sidebar .twitter-icon:hover {
+  background: #def1fd;
+  cursor: pointer;
+}
+
+.sidebar .sidebarOption-container {
+  margin-right: 1.5rem;
+  line-height: 2rem;
+  color: #14171A;
+}
+
+.sidebar .sidebarOption-container .sidebarOption {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1rem;
+  border-radius: 2rem;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .sidebarOption-container .sidebarOption .icon-container {
+  min-width: 2.5rem;
+}
+
+.sidebar .sidebarOption-container .sidebarOption:hover {
+  background: #dfe3e7;
+  cursor: pointer;
+}
+
+.sidebar .sidebarOption-container .active {
+  color: blue;
+}
+
+.sidebar .sidebarOption-container .btn-tweet {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background: #1DA1F2;
+  color: #FFFFFF;
+}
+
+.btn.btn-primary:hover {
+  background: #0c85d0;
+}
+
+.btn.btn-secondary {
+  background: #14171A;
+  color: #FFFFFF;
+}
+
+.btn.btn-secondary:hover {
+  background: #2a3137;
+}
+/*# sourceMappingURL=main.css.map */
