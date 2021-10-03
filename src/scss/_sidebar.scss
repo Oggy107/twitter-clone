@@ -1,25 +1,28 @@
 .sidebar {
-    width: 25vw;
+    width: 100%;
     height: 100vw;
-    border-right: 1px solid $color-secondary-elg;
     display: flex;
     justify-content: right;
 
     & .twitter-icon {
+        $local-color: $color-primary;
+
         padding: .75rem;
-        color: $color-primary;
+        color: $local-color;
         border-radius: 2rem;
 
         &:hover {
-            background: lighten($color-primary, 40);
+            background: lighten($local-color, 40);
             cursor: pointer;
         }
     }
 
     & .sidebarOption-container {
+        $local-color: $color-secondary-b;
+
         margin-right: 1.5rem;
         line-height: 2rem;
-        color: $color-secondary-b;
+        color: $local-color;
 
         & .sidebarOption {
             width: max-content;
@@ -34,13 +37,13 @@
             }
         
             &:hover {
-                background: lighten($color-secondary-b, 80);
+                background: lighten($local-color, 80);
                 cursor: pointer;
             }
         }
 
         & .active {
-            color: blue;
+            color: $color-primary;
         }
 
         & .btn-tweet {
