@@ -134,11 +134,12 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .feed .header .top-tweets {
   color: #14171A;
-  padding: .75rem;
+  padding: 0.75rem;
   border-radius: 2rem;
 }
 
@@ -222,7 +223,7 @@
 }
 
 .feed .tweetBox .input-container .options-container .icon-container i {
-  padding: .75rem;
+  padding: 0.75rem;
   color: #1DA1F2;
   border-radius: 2rem;
 }
@@ -233,14 +234,74 @@
 }
 
 .feed .tweetBox .input-container .options-container .btn-tweet {
-  padding: .6rem;
+  padding: 0.6rem;
 }
 
 .post {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  width: 100%;
   border-bottom: 1px solid #E1E8ED;
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post .userImg-area {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.post .userImg-area .userImg-container {
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+  position: relative;
+  bottom: 0.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/271deea8-e28c-41a3-aaf5-2913f5f48be6/de7834s-6515bd40-8b2c-4dc6-a843-5ac1a95a8b55.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI3MWRlZWE4LWUyOGMtNDFhMy1hYWY1LTI5MTNmNWY0OGJlNlwvZGU3ODM0cy02NTE1YmQ0MC04YjJjLTRkYzYtYTg0My01YWMxYTk1YThiNTUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.BopkDn1ptIwbmcKHdAOlYHyAOOACXW0Zfgbs0-6BY-E");
+  background-size: cover;
+  background-position: center;
+}
+
+.post .post-area {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+
+.post .post-area .userName-container ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.3rem;
+          column-gap: 0.3rem;
+}
+
+.post .post-area .userName-container ul .userName {
+  color: #657786;
+}
+
+.post .post-area .postImg-container {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.post .post-area .postImg-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  -webkit-box-shadow: 3px 3px 10px grey;
+          box-shadow: 3px 3px 10px grey;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=main.css.map */
